@@ -7,9 +7,6 @@ import express from 'express';
 import routes from './routes/index.js';
 import { sequelize } from './models/index.js';
 
-console.log('DB_PASSWORD type:', typeof process.env.DB_PASSWORD);
-console.log('DB_PASSWORD value:', process.env.DB_PASSWORD);
-
 const app = express();
 const PORT = process.env.PORT || 3006;
 
